@@ -1,11 +1,12 @@
 import React from 'react';
 import { Message } from '../Api';
 
+
 interface MessageCardProps {
   messages: Message[];
   type: string;
   title: string;
-  handleClear: (messages: Message[], message: Message) => {};
+  handleClear: (messages: Message[], message: Message) => { };
 }
 
 const MessageCard: React.FC<MessageCardProps> = ({ messages, type, title, handleClear }) => {

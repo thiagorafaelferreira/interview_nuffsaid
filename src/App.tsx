@@ -37,6 +37,7 @@ const App: React.FC<{}> = () => {
       }
     }
     updateMessageStrategy[message.priority](messages);
+    return true;
   }
 
   const clearMessages = () => {
